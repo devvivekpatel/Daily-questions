@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function capital(){
+            let name = prompt("Enter your name in small letters");
+            let b = name[0].toUpperCase();
+            let a = "";
+            a+= b;
+            let c = name.slice(1);
+    
+            a = b+c;
+
+            name[0] = name[0].toUpperCase();
+            document.write("YOUR name is : ",a);
+        }
+        capital();
+
+    </script>
+    
+</body>
+</html>

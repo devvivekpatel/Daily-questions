@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
-             for(let i=5; i>=1; i--){
-            for(let j=5; j>=i; j-- ){
-                document.write("&nbsp;&nbsp;&nbsp;")
+        let para = "my name is vivek";
+
+        for(let i=0; i<para.length; i++){
+            console.log(para[i]);
+
+            if(para[i] == " "){
+               var a = para[i+1].toUpperCase();
+               console.log(a);
             }
-            for(let k=i; k>=1; k--){
-                document.write(" *");
-            }
-            document.write("<BR>");
+
         }
     </script>
     
