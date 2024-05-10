@@ -10,3 +10,16 @@ for(let i=0; i<a.length; i++){
         }
     }
 }
+
+console.log(5!=="5"); //true
+console.log(5!="5"); //false
+console.log(5===5);  //true
+console.log(5==="5"); //false
+
+function z(){
+    // z is not accessible outside ✨ remember 
+    var y=6;
+    console.log("It is y 😑",y)
+}
+z();
+console.log(y);

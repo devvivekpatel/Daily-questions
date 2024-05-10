@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Today is : <span id="day">day</span></h1>
+    <h1><span id="hour">10</span>:<span id="min">30</span>:<span id="sec">38</span>  <span id="am">AM</span> </h1>
+    
+
+    <script>
+
+        function time(){
+            let ar = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            let day = document.getElementById("day");
+            let hour = document.getElementById("hour");
+            let min = document.getElementById("min");
+            let sec = document.getElementById("sec");
+            let am = document.getElementById("am")
+
+            let a = new Date();
+            
+            
+            hour.innerHTML = a.getHours();
+            if(hour.innerHTML>12){
+                hour.innerHTML = hour.innerHTML-12;
+                am.innerHTML = "PM";
+
+            }
+            min.innerHTML = a.getMinutes();
+            sec.innerHTML = a.getSeconds();
+            day.innerHTML = ar[a.getDay()];
+
+        }
+        setInterval(time,1000);
+
+        let b = new Date();
+
+        console.log(b.getDay());
+
+    </script>
+</body>
+</html>
